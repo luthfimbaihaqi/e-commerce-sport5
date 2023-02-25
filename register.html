@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<hhtml lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="min-h-screen py-40 bg-slate-200">
+        <div class="container mx-auto ">
+            <div class="flex flex-col lg:flex-row w-10/12 bg-white rounded-xl mx-auto shadow-neutral-900 shadow-xl">
+                <div class="lg:w-1/2 bg-cover rounded-l-xl" style="background-image: url(./img/Register-bg.jpg);">
+                    
+                </div>
+                <div>
+                    <a href="#" class="text-slate-700 hover:text-sky-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-7 mt-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                      </svg>
+                      </a>
+                </div>
+                <div  class="lg:w-1/2 pt-[25px] pb-[25px] px-5">
+                    <h2 class="text-3xl mb-6 mt-6">Register</h2>
+                    <p class="text-neutral-500 mb-6">
+                        Let's get you all set up so you can verify your personal account and begin setting up your profile.
+                    </p>
+                    <form action="#">
+                        <div class="grid lg:grid-cols-2 gap-0 sm:grid-cols-1">
+                            <label for="firtsname">
+                                <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">First Name</span>
+                                <input type="text" id="firtsname" placeholder="First Name" class="border py-1 px-2 shadow-lg rounded-md block text-md placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500 sm:w-full lg:w-auto">
+                            </label>
+                            <label for="lastname">
+                                <div class="lg:mt-0 sm:mt-5">
+                                    <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Last Name</span>
+                                    <input type="text" id="lastname" placeholder="Last Name" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500 sm:w-full lg:w-auto">
+                                </div>
+                            </label>
+                        </div>
+                        <label for="date">
+                            <div class="mt-5">
+                                <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Date of Birth</span>
+                                <input type="date" id="date" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500 w-full ">  
+                            </div>
+                        </label>
+                        <div class="mt-5">
+                        <label for="phone">
+                            <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Phone Number</span>
+                            <input type="text" id="phone" placeholder="Phone Number" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md w-full placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500 ">  
+                        </label>
+                        </div>
+                        <div class="mt-5">
+                        <label for="email">
+                            <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Email</span>
+                            <input type="email" id="email" placeholder="Email" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md w-full placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500 invalid:text-red-600">  
+                        </label>
+                        </div>
+                        <div class="mt-5">
+                        <label for="pass">
+                            <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Password</span>
+                            <input type="password" placeholder="Password" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md w-full placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500">  
+                        </label>
+                        </div>
+                        <div class="mt-5">
+                        <label for="confirm">
+                            <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-600 after:ml-0.5">Confirm Password</span>
+                            <input type="password" placeholder="Confirm Password" class="border border-gray-400 py-1 px-2 shadow-lg rounded-md block text-md w-full placeholder:text-slate-400 focus:outline-none focus:ring-1 focus ring-sky-500 focus:border-sky-500">  
+                        </label>
+                        </div>
+                        <div class="mt-5">
+                            <input type="checkbox" class="border border-gray-400">
+                            <span class="items-center">
+                                I accept the <a href="#" class="text-blue-600 font-semibold">Term of use</a> & <a href="#" class="text-blue-600 font-semibold">Privacy Policy</a>
+                            </span>
+                        </div>
+                        <div class="mt-5">
+                            <button class="w-full bg-sky-500 py-3 text-center rounded-md text-white text-lg font-semibold hover:bg-sky-400 shadow-lg duration-200 ease-in-out mb-5">Create Account</button>
+                            <span class="flex justify-center">
+                                Already have an account? <a href="#" class="text-blue-600 ml-2">Log in</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</hhtml>
